@@ -1,0 +1,17 @@
+{
+  "name": "automated-a11y",
+  "author": "joe-s-avaya",
+  "keywords": [],
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "all": "pnpm i && pnpm clean && pnpm build",
+    "clean": "rm -rf dist",
+    "build": "pnpm build:apps",
+    "build:apps": "pnpm build:angular-app && pnpm build:react-app && pnpm build:svelte-app",
+    "build:angular-app": "pnpm -F angularapp build",
+    "build:react-app": "pnpm -F reactapp build",
+    "build:svelte-app": "pnpm -F svelteapp build"
+  }
+}
