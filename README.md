@@ -28,3 +28,8 @@ Note that all of these projects are simply instantiated with defaults and little
 - [Svelte Site](https://automated-a11y-svelte.netlify.app)
 - [plugin github repo](https://github.com/treosh/lighthouse-ci-action)
 - [example of a failed lighthouse](https://github.com/avaya-dux/automated-a11y/actions/runs/5426588786/jobs/9868831336?pr=5) check
+
+## TODO:
+
+- add storybook and show how to use a11y plugin
+- add axe unit tests

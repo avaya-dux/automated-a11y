@@ -6,12 +6,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "all": "pnpm i && pnpm clean && pnpm build",
+    "all": "pnpm i && pnpm clean && pnpm build && pnpm test",
     "clean": "rm -rf dist",
-    "build": "pnpm build:apps",
-    "build:apps": "pnpm build:angular-app && pnpm build:react-app && pnpm build:svelte-app",
+    "build": "pnpm build:angular-app && pnpm build:react-app && pnpm build:svelte-app",
     "build:angular-app": "pnpm -F angularapp build",
     "build:react-app": "pnpm -F reactapp build",
-    "build:svelte-app": "pnpm -F svelteapp build"
+    "build:svelte-app": "pnpm -F svelteapp build",
+    "test": "pnpm test:angular && pnpm test:react && pnpm test:svelte",
+    "test:angular": "pnpm angularapp test",
+    "test:react": "pnpm reactapp test",
+    "test:svelte": "pnpm svelteapp test"
   }
 }

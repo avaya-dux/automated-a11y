@@ -1,4 +1,4 @@
-name: CI (install and build)
+name: CI (install+build+test)
 on: [push]
 jobs:
   build:
