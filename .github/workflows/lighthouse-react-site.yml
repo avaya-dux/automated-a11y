@@ -1,4 +1,4 @@
-name: Lighthouse CI with Netlify
+name: Lighthouse CI (react)
 on: pull_request
 jobs:
   lighthouse:
@@ -40,7 +40,7 @@ jobs:
         uses: jakepartusch/wait-for-netlify-action@v1
         id: netlify
         with:
-          site_name: "automated-a11y-with-lighthouse"
+          site_name: "automated-a11y-react"
 
       - name: Audit core URLs on DP
         uses: treosh/lighthouse-ci-action@v10

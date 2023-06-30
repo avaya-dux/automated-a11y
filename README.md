@@ -12,7 +12,7 @@ This is an example repository detailing how to automate a11y and add unit testin
 
 TODO: add instructions
 
-- add github action ([see example file](./.github/workflows/lighthouse.yml))
+- add github action ([see example files](./.github/workflows/))
   - see the [official plugin docs](https://github.com/treosh/lighthouse-ci-action) for more info
 - add configuration for plugin ([see example file](./lighthouserc.json))
 
