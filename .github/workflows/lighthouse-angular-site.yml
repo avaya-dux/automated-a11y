@@ -42,7 +42,7 @@ jobs:
         with:
           site_name: "automated-a11y-angular"
 
-      - name: Audit core URLs on DP
+      - name: Audit core URLs on Design Preview
         uses: treosh/lighthouse-ci-action@v10
         with:
           urls: |
